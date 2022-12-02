@@ -1,0 +1,121 @@
+.contact-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 0.5rem 0;
+  margin: 0;
+  height: 93vh;
+  overflow: scroll;
+}
+
+.contact-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr 6fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  background-color: rgb(114, 37, 149);
+  padding: 0 0.5rem;
+  margin: 0.25rem;
+  flex-basis: auto;
+  width: 95%;
+  height: 3.125rem;
+}
+
+.contact-card:hover {
+  cursor: pointer;
+  background-color: rgba(114, 37, 149, 0.9);
+}
+
+.contact-card-selected {
+  color: rgb(114, 37, 149);
+  background-color: white;
+}
+
+.contact-card-selected:hover {
+  cursor: pointer;
+  background-color: green;
+}
+
+.contact-card_name {
+  padding-left: 1rem;
+}
+
+.contact-card_method {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-name_footer {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.contact-name_footer ul li:nth-child(1) {
+  background-color: gold;
+  flex-grow: 2;
+}
+
+.contact-name_footer ul li:nth-child(2) {
+  background-color: blue;
+  flex-grow: 1;
+}
+
+.contact-name_footer ul li:nth-child(3) {
+  background-color: green;
+  flex-grow: 1;
+}
+
+.contact-name_details {
+  text-align: center;
+  background-color: red;
+  justify-content: center;
+}
+
+.contact-update-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-right: 0.75rem;
+}
+
+.contact-update-form_input {
+  width: 75%;
+  margin-bottom: 2rem;
+  border: 0px;
+  border-bottom: 1px green solid;
+}
+
+.contact-update-form_input:focus {
+  outline: none;
+  border-bottom: 1px red solid;
+}
+
+.contact-update-form_select {
+  width: 75%;
+  margin-bottom: 2rem;
+  border: 0px;
+  border-bottom: 1px green solid;
+}
+
+.contact-update-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 93vh;
+}
+
+.contact-update-container_update-form {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.contact-update-container_opportunity {
+  grid-area: 2 / 1 / 3 / 2;
+}
